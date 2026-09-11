@@ -5,15 +5,15 @@ import './index.css';
 import App from './App';
 import "ulog"
 import {RomContextProvider} from "./context/RomContext";
-import {DeviceOrientationContextProvider} from "./context/DeviceOrientationContext";
+import {DeviceContextProvider} from "./context/DeviceContext";
 
 const Index = () => {
     return (
-        <DeviceOrientationContextProvider>
+        <DeviceContextProvider>
             <RomContextProvider>
                 <App/>
             </RomContextProvider>
-        </DeviceOrientationContextProvider>
+        </DeviceContextProvider>
     );
 }
 

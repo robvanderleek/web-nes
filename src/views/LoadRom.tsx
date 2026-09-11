@@ -7,7 +7,7 @@ import Version from "../version";
 import Readme from "./Readme";
 import {useRomContext} from "../context/RomContext";
 import {Portrait, Section} from "./LoadRom.style";
-import {useDeviceOrientation} from "../context/DeviceOrientationContext";
+import {useDevice} from "../context/DeviceContext";
 import MarqueeModule from "react-fast-marquee";
 
 function blinkingEffect() {
@@ -24,7 +24,7 @@ const AnimatedComponent = styled.div`
 
 export default function LoadRom() {
     const romContext = useRomContext();
-    const {isTouchDevice} = useDeviceOrientation();
+    const {isTouchDevice} = useDevice();
     const [showReadme, setShowReadme] = useState(false);
     // @ts-ignore
     const Marquee = MarqueeModule.default;

@@ -2,16 +2,16 @@ import React, {createContext, ReactNode, useContext, useEffect} from "react";
 
 type Orientation = 'portrait' | 'landscape' | null;
 
-interface DeviceOrientationContextValue {
+interface DeviceContextValue {
     initializing: boolean;
     isTouchDevice: boolean;
     orientation: Orientation;
     screenWidth: number;
 }
 
-const DeviceOrientationContext = createContext({} as DeviceOrientationContextValue);
+const DeviceContext = createContext({} as DeviceContextValue);
 
-export const DeviceOrientationContextProvider = (props: { children?: ReactNode }) => {
+export const DeviceContextProvider = (props: { children?: ReactNode }) => {
     const [isTouchDevice, setIsTouchDevice] = React.useState(false);
     const [initializing, setInitializing] = React.useState(true);
     const [orientation, setOrientation] = React.useState<Orientation>(null);
@@ -54,15 +54,15 @@ export const DeviceOrientationContextProvider = (props: { children?: ReactNode }
     }
 
     return (
-        <DeviceOrientationContext.Provider value={{
+        <DeviceContext.Provider value={{
             initializing,
             isTouchDevice,
             orientation,
             screenWidth
         }}>
             {props.children}
-        </DeviceOrientationContext.Provider>
+        </DeviceContext.Provider>
     );
 }
 
-export const useDeviceOrientation = () => useContext(DeviceOrientationContext);
+export const useDevice = () => useContext(DeviceContext);

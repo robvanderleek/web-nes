@@ -4,25 +4,11 @@ import LeftGamePad from "../LeftGamePad";
 import RightGamePad from "../RightGamePad";
 import TouchController from "../TouchController";
 import {useEffect, useRef, useState} from "react";
-import styled from "styled-components";
 import {useRomContext} from "../context/RomContext";
 import {Nostalgist} from "nostalgist";
+import {UpperLeft, UpperRight} from "./Game.style";
 
 const controller = new TouchController();
-
-const UpperLeft = styled.div`
-    position: fixed;
-    left: 15px;
-    top: 15px;
-`
-
-const UpperRight = styled.i`
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-`
 
 export default function Game() {
     const romContext = useRomContext();

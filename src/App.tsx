@@ -1,12 +1,12 @@
 import {LargeMessage, Main} from "./Styles";
 import LoadRom from "./views/LoadRom";
 import Game from "./views/Game";
-import {useDeviceOrientation} from "./context/DeviceOrientationContext";
+import {useDevice} from "./context/DeviceContext";
 import {useRomContext} from "./context/RomContext";
 
 export default function App() {
     const romContext = useRomContext();
-    const {initializing, isTouchDevice, orientation} = useDeviceOrientation();
+    const {initializing, isTouchDevice, orientation} = useDevice();
 
     if (initializing) {
         return null;
