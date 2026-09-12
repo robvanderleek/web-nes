@@ -33,7 +33,7 @@ export default function LoadRom() {
         if (isTouchDevice) {
             return (
                 <AnimatedComponent>
-                    <HideableLargeMessage hide={romContext.selected === undefined}>Rotate device to
+                    <HideableLargeMessage hide={romContext.selected === null}>Rotate device to
                         play!</HideableLargeMessage>
                 </AnimatedComponent>
             );

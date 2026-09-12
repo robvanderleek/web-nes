@@ -14,14 +14,13 @@ export default function App() {
         if (orientation === 'portrait') {
             return (<LoadRom/>);
         } else {
-            if (romContext.selected !== undefined) {
-                return (<Game/>);
-            } else {
+            if (romContext.selected === null) {
                 return (<Main><LargeMessage>Rotate to select a ROM to play</LargeMessage></Main>);
+            } else {
+                return (<Game/>);
             }
         }
     } else {
-
         if (romContext.selected === null) {
             return (<LoadRom/>);
         } else {
