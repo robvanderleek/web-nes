@@ -1,0 +1,207 @@
+{
+  "version": "0.21.0",
+  "uuid": "ac0e4adf-2d38-4ff0-8ed6-ced47c82cbb4",
+  "timestamp": "2026-09-12T12:12:53+00:00",
+  "root": "/github/workspace",
+  "repository": {
+    "owner": "robvanderleek",
+    "name": "web-nes",
+    "branch": "main"
+  },
+  "codebase": {
+    "totals": {
+      "TypeScript": {
+        "files": 11,
+        "lines_of_code": 32,
+        "functions": 7,
+        "hard_to_maintain": 0,
+        "unmaintainable": 0
+      },
+      "JavaScript": {
+        "files": 3,
+        "lines_of_code": 108,
+        "functions": 6,
+        "hard_to_maintain": 0,
+        "unmaintainable": 0
+      }
+    },
+    "tree": {
+      "./": {
+        "entries": [
+          "vite.config.ts",
+          "src/"
+        ],
+        "profile": [53, 87, 0, 0]
+      },
+      "src/": {
+        "entries": [
+          "declarations.d.ts",
+          "serviceWorkerRegistration.js",
+          "utils.test.ts",
+          "Styles.ts",
+          "vite-env.d.ts",
+          "service-worker.js",
+          "reportWebVitals.js",
+          "utils.ts",
+          "context/",
+          "views/",
+          "entities/",
+          "components/"
+        ],
+        "profile": [53, 87, 0, 0]
+      },
+      "src/context/": {
+        "entries": [
+          "RomContext.test.ts"
+        ],
+        "profile": [12, 0, 0, 0]
+      },
+      "src/views/": {
+        "entries": [
+          "Game.style.ts",
+          "LoadRom.style.ts"
+        ],
+        "profile": [0, 0, 0, 0]
+      },
+      "src/entities/": {
+        "entries": [
+          "Rom.ts"
+        ],
+        "profile": [0, 0, 0, 0]
+      },
+      "src/components/": {
+        "entries": [
+          "RomButton.style.ts"
+        ],
+        "profile": [0, 0, 0, 0]
+      }
+    },
+    "files": {
+      "vite.config.ts": {
+        "checksum": "16825d10c3785d7e45f60f249cadd1e9",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/declarations.d.ts": {
+        "checksum": "9c4169eefdcf5f03efdb92d149d97565",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/serviceWorkerRegistration.js": {
+        "checksum": "a0bf88f839f198ec05b66d601c6b7da1",
+        "language": "JavaScript",
+        "loc": 108,
+        "profile": [21, 87, 0, 0],
+        "measurements": [
+          {"unit_name": "register", "start": {"line": 21, "column": 8}, "end": {"line": 53, "column": 2}, "value": 22},
+          {"unit_name": "registerValidSW", "start": {"line": 55, "column": 1}, "end": {"line": 97, "column": 2}, "value": 10},
+          {"unit_name": "onupdatefound", "start": {"line": 59, "column": 20}, "end": {"line": 92, "column": 8}, "value": 24},
+          {"unit_name": "onstatechange", "start": {"line": 64, "column": 26}, "end": {"line": 91, "column": 10}, "value": 18},
+          {"unit_name": "checkValidServiceWorker", "start": {"line": 99, "column": 1}, "end": {"line": 125, "column": 2}, "value": 23},
+          {"unit_name": "unregister", "start": {"line": 127, "column": 8}, "end": {"line": 137, "column": 2}, "value": 11}
+        ]
+      },
+      "src/utils.test.ts": {
+        "checksum": "8ef00abcaeb6c8fcb82c650abd8bb430",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/Styles.ts": {
+        "checksum": "5227b805bea7ad34d6d17a0eb2c4dc4b",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/vite-env.d.ts": {
+        "checksum": "0352474ba2918efe13895edbc3780d94",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/service-worker.js": {
+        "checksum": "38a7df1dbf951646ed6e18d7e1d3dd2f",
+        "language": "JavaScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/reportWebVitals.js": {
+        "checksum": "240e2381f826a9bb84d178b29b7b9abe",
+        "language": "JavaScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/utils.ts": {
+        "checksum": "0f4a7a8c4798f92e17b47a277a64a197",
+        "language": "TypeScript",
+        "loc": 20,
+        "profile": [20, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "prettifyRomName", "start": {"line": 3, "column": 17}, "end": {"line": 16, "column": 2}, "value": 14},
+          {"unit_name": "countUppercase", "start": {"line": 18, "column": 17}, "end": {"line": 20, "column": 2}, "value": 3},
+          {"unit_name": "isUpperCase", "start": {"line": 22, "column": 10}, "end": {"line": 24, "column": 2}, "value": 3}
+        ]
+      },
+      "src/context/RomContext.test.ts": {
+        "checksum": "e238577cffb75bb05c4da26a67cce614",
+        "language": "TypeScript",
+        "loc": 12,
+        "profile": [12, 0, 0, 0],
+        "measurements": [
+          {"unit_name": "clear", "start": {"line": 7, "column": 5}, "end": {"line": 9, "column": 6}, "value": 3},
+          {"unit_name": "getItem", "start": {"line": 11, "column": 5}, "end": {"line": 13, "column": 6}, "value": 3},
+          {"unit_name": "setItem", "start": {"line": 15, "column": 5}, "end": {"line": 17, "column": 6}, "value": 3},
+          {"unit_name": "removeItem", "start": {"line": 19, "column": 5}, "end": {"line": 21, "column": 6}, "value": 3}
+        ]
+      },
+      "src/views/Game.style.ts": {
+        "checksum": "6baf940d1244f22161e46f41774325da",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/views/LoadRom.style.ts": {
+        "checksum": "f106dcce4ae5d2bbc3b8cfc8d1254c08",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/entities/Rom.ts": {
+        "checksum": "3a09146d55161df6b07721c4c4da0656",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      },
+      "src/components/RomButton.style.ts": {
+        "checksum": "68b5afd6a185f750d65d1352df17ef49",
+        "language": "TypeScript",
+        "loc": 0,
+        "profile": [0, 0, 0, 0],
+        "measurements": [
+        ]
+      }
+    }
+  }
+}
